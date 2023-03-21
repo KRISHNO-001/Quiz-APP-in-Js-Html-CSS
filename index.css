@@ -1,0 +1,142 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:50%; 
+    width:60%;
+    border-top: 5px solid rgb(117, 90, 143)  ;
+    scale: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(250, 242, 234);
+}
+
+.visible{
+    scale: 1;
+}
+.container h2{
+    text-align: center;
+   
+}
+
+
+#btn{
+     min-width: 100%;
+      padding: 20px;
+      border: none;
+      color: white;
+      margin-top: 20px;
+      background-color: rgb(117, 90, 143) ;
+      font-size: larger;
+      font-weight: 600;
+      letter-spacing: 2px;
+}
+#start{
+
+     margin-left: auto;
+     margin-right: auto;
+     position: absolute;
+     font-weight: 700;
+     border-radius: 5px;
+     box-shadow: 2px 2px 2px solid black;
+     top: 30%;
+     left: 45%;
+     width: 10%;
+     background-color: greenyellow;
+     padding: 20px;
+
+}
+h1{
+     
+     text-align: center;
+     color: rgb(159, 16, 167);
+    
+    }
+.hide{
+    scale:0;
+}
+li{
+    list-style: none;
+    margin: 12px;
+    background-color: rgb(219, 222, 233);
+    min-width: 500px ;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px grey;
+}
+.active{
+
+    background-color: rgb(100, 122, 189);
+    color: ivory;
+    font-weight: 600;
+}
+li:hover
+{
+    transform: scale(101%);
+    transition-duration: 200ms;
+    width:85%;
+}
+label{
+
+    font-size: 20px;
+    font-weight: 600;
+    
+    letter-spacing: 1px;
+    margin: 5px;
+}
+body{
+
+    background-color: lightseagreen;
+}
+#reload
+{
+    padding: 15px;
+    width: 30%;
+    margin: 15px;
+    font-weight: 600;
+    font-size: larger;
+    background-color: rgb(117, 90, 143);
+    border-radius: 10px;
+    color: white;
+    border:none;
+
+}
+#counter{
+
+    background-color: darkgray;
+    padding: 7px;
+    margin-top: 2px;    
+    border-radius: 20px;
+    width:10%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media only screen and (max-width:1200px){
+
+    li{
+        min-width:200px;
+    }
+    
+}
+
+@media only screen and (max-width:480px){
+
+    li{
+        padding: 5px;
+        margin-left: 1px;
+        display: flex;
+        
+        min-width: 150px;
+        align-self:self-start ; 
+    }
+    #options{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #reload{
+        min-width: 100px;
+    }
+
+}
