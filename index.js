@@ -149,7 +149,7 @@ function loadQuestion() {
 function timer() {
 
     percent = ((score / answer.length) * 100).toFixed(2);
-    container.innerHTML = `<h2 id>You score is ${percent}% ,you got ${score}/${answer.length} right</h2>
+    container.innerHTML = `<h2 id> Time out !! <br> Your score is ${percent}% ,<br>you got ${score}/${answer.length} right</h2>
                             <button  id="reload" onclick="location.reload()">Reload</button>`;
 }
 let myVAR = setInterval(countdown, 1000);
